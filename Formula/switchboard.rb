@@ -5,21 +5,21 @@
 class Switchboard < Formula
   desc "The missing control panel for your project; every switch runs a command"
   homepage "https://github.com/foundry23/switchboard"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foundry23/switchboard/releases/download/v0.1.0/switchboard_0.1.0_darwin_amd64.tar.gz"
-      sha256 "898a731a1c403af09f6fc5adb773852626c287316748c792f0641d5044bb5ebd"
+      url "https://github.com/foundry23/switchboard/releases/download/v0.1.1/switchboard_0.1.1_darwin_amd64.tar.gz"
+      sha256 "7a86ebbf9c4c258afdc3a28cdb01f9d21e76c27e0df5a26dcf6402c5748e8a1e"
 
       define_method(:install) do
         bin.install "switchboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/foundry23/switchboard/releases/download/v0.1.0/switchboard_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6099c4a90a467e1f333ff41baf7905687665d23731e21e10a927946cea9ab5ad"
+      url "https://github.com/foundry23/switchboard/releases/download/v0.1.1/switchboard_0.1.1_darwin_arm64.tar.gz"
+      sha256 "c4e50a7bdb4ba093039a4b048e644987db107f1b8b48672dbdb15a0bf159ea98"
 
       define_method(:install) do
         bin.install "switchboard"
@@ -29,15 +29,15 @@ class Switchboard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/switchboard/releases/download/v0.1.0/switchboard_0.1.0_linux_amd64.tar.gz"
-      sha256 "b74a7371078cbd88ade3afe908743b3d1844299104be5517facb46f320353f7b"
+      url "https://github.com/foundry23/switchboard/releases/download/v0.1.1/switchboard_0.1.1_linux_amd64.tar.gz"
+      sha256 "8fc7e4cdb533eae415368cdd422ff1107eecac7f3d3d310933c13f5985e56f98"
       define_method(:install) do
         bin.install "switchboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/switchboard/releases/download/v0.1.0/switchboard_0.1.0_linux_arm64.tar.gz"
-      sha256 "439c3dd34406ad6571bffc374fde5eb8acba3b09b14a94a1c902de706504b137"
+      url "https://github.com/foundry23/switchboard/releases/download/v0.1.1/switchboard_0.1.1_linux_arm64.tar.gz"
+      sha256 "dcf8b7fcc71e1a9f7f473e4091dcda60e4027367ca6dcc6c407495e6261b6270"
       define_method(:install) do
         bin.install "switchboard"
       end
