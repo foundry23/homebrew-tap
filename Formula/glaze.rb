@@ -5,21 +5,21 @@
 class Glaze < Formula
   desc "Convert git porcelain to JSON"
   homepage "https://github.com/foundry23/glaze"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foundry23/glaze/releases/download/v0.1.0/glaze_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8e795a6ed953ce0e4bc43633658d38fa2dfe7d73f8e9ac4b0a93df678b5dfbfa"
+      url "https://github.com/foundry23/glaze/releases/download/v0.1.1/glaze_0.1.1_darwin_amd64.tar.gz"
+      sha256 "94410ef37a526a69b3338d7b5f3d7a88a659a7ac500888d6d55dc281e8eb7d4a"
 
       define_method(:install) do
         bin.install "glaze"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/foundry23/glaze/releases/download/v0.1.0/glaze_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d63c5b55d8825bf0d445bc4a28764d50f41509dcb5cceceaaebac0a2e971a6cf"
+      url "https://github.com/foundry23/glaze/releases/download/v0.1.1/glaze_0.1.1_darwin_arm64.tar.gz"
+      sha256 "34da7f5e9178e96d6656a17c207a159991f7ba676b21b1fbe32fe01f7320b475"
 
       define_method(:install) do
         bin.install "glaze"
@@ -29,15 +29,15 @@ class Glaze < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/glaze/releases/download/v0.1.0/glaze_0.1.0_linux_amd64.tar.gz"
-      sha256 "1a4d409935b2b3fc09ea5910e7b4743598f564dae459a80730b9b211d2f85b5b"
+      url "https://github.com/foundry23/glaze/releases/download/v0.1.1/glaze_0.1.1_linux_amd64.tar.gz"
+      sha256 "944db86c685c27ca6c0f85fae7de15aa03faa1c391ce421cb244f6b8691e6820"
       define_method(:install) do
         bin.install "glaze"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/glaze/releases/download/v0.1.0/glaze_0.1.0_linux_arm64.tar.gz"
-      sha256 "e3220d57db1ffa244143adeae233fee2a4f94a1139c335a366db1dd4e9218167"
+      url "https://github.com/foundry23/glaze/releases/download/v0.1.1/glaze_0.1.1_linux_arm64.tar.gz"
+      sha256 "66fff3aa2f79c38be7d50d847d4c77b52f8dec2d5ff9073d43c0e3fe42f809f7"
       define_method(:install) do
         bin.install "glaze"
       end
