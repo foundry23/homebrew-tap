@@ -5,21 +5,21 @@
 class K3dRouter < Formula
   desc "A shared local reverse proxy for k3d clusters"
   homepage "https://github.com/foundry23/k3d-router"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.2/k3d-router_0.2.2_darwin_amd64.tar.gz"
-      sha256 "393f8d7d431b209f1fc1569e33a4a8ed3162afb30bb90ee806b14a70df910504"
+      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.3/k3d-router_0.2.3_darwin_amd64.tar.gz"
+      sha256 "c92b73d675a5e6b22e803ac2f413e941d9fee18244efccf3e0d83964f368e5b9"
 
       define_method(:install) do
         bin.install "k3d-router"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.2/k3d-router_0.2.2_darwin_arm64.tar.gz"
-      sha256 "23b49ad5794d22da97f01293fb836a2e4c82fd1370121eec74219a8be57be815"
+      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.3/k3d-router_0.2.3_darwin_arm64.tar.gz"
+      sha256 "c9e2fbd9a6e35e965088fb41e333e9ef2f9c2f661614d6e7bf4f65c0afe6d76c"
 
       define_method(:install) do
         bin.install "k3d-router"
@@ -29,15 +29,15 @@ class K3dRouter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.2/k3d-router_0.2.2_linux_amd64.tar.gz"
-      sha256 "6d50d60ccee17c3f21b21869fe2ba32841448816bbd496f0ddd218f9bd7b3cd7"
+      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.3/k3d-router_0.2.3_linux_amd64.tar.gz"
+      sha256 "5fa7685941ab8c3167421d7199b98cd4812ddded2314e439d6eff1cf8972d74f"
       define_method(:install) do
         bin.install "k3d-router"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.2/k3d-router_0.2.2_linux_arm64.tar.gz"
-      sha256 "0daf4dd60c288e9718daf93dc81194631b916c80148e6c467354d328bd8e7682"
+      url "https://github.com/foundry23/k3d-router/releases/download/v0.2.3/k3d-router_0.2.3_linux_arm64.tar.gz"
+      sha256 "ff7b4a971b6d29c7b015c7ae25f79edd24b5873038d5cfba30236e3c213aada6"
       define_method(:install) do
         bin.install "k3d-router"
       end
